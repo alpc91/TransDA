@@ -6,11 +6,19 @@ This repo contains the supported code and configuration files to reproduce seman
 
 > **Smoothing Matters: Momentum Transformer for Domain Adaptive Semantic Segmentation**<br>
 >
-> **Abstract** *After the great success of Vision Transformer variants (ViTs) in computer vision, it has also demonstrated great potential in domain adaptive semantic segmentation. Unfortunately, straightforwardly applying local ViTs in domain adaptive semantic segmentation does not bring in expected improvement. We find that the pitfall of local ViTs is due to the severe high-frequency components generated during both the pseudo-label construction and features alignment for target domains. These high-frequency components make the training of local ViTs very unsmooth and hurt their transferability. In this paper, we introduce a low-pass filtering mechanism, momentum network, to smooth the learning dynamics of target domain features and pseudo labels. Furthermore, we propose a dynamic of discrepancy measurement to align the distributions in the source and target domains via dynamic weights to evaluate the importance of the samples. After tackling the above issues, extensive experiments on sim2real benchmarks show that the proposed method outperforms the state-of-the-art methods. *
+> **Abstract** *After the great success of Vision Transformer variants (ViTs) in computer vision, it has also demonstrated great potential in domain adaptive semantic segmentation. Unfortunately, straightforwardly applying local ViTs in domain adaptive semantic segmentation does not bring in expected improvement. We find that the pitfall of local ViTs is due to the severe high-frequency components generated during both the pseudo-label construction and features alignment for target domains. These high-frequency components make the training of local ViTs very unsmooth and hurt their transferability. In this paper, we introduce a low-pass filtering mechanism, momentum network, to smooth the learning dynamics of target domain features and pseudo labels. Furthermore, we propose a dynamic of discrepancy measurement to align the distributions in the source and target domains via dynamic weights to evaluate the importance of the samples. After tackling the above issues, extensive experiments on sim2real benchmarks show that the proposed method outperforms the state-of-the-art methods.*
 
 ## Author
 Runfa Chen, Yu Rong, Shangmin Guo, Jiaqi Han, Fuchun Sun, Tingyang Xu, Wenbing Huang
 
+
+<div align="center">
+  <img src="./figure/train_title.png"  >
+</div>
+
+<div align="center">
+  <img src="./figure/TransDA.png" >
+</div>
 
 ## Citation
 If you find this code useful for your research, please cite our paper:
@@ -25,15 +33,6 @@ If you find this code useful for your research, please cite our paper:
     primaryClass={cs.CV}
 }
 ```
-
-
-<div align="center">
-  <img src="./figure/train_title.png" width = '586px' >
-</div>
-
-<div align="center">
-  <img src="./figure/TransDA.png" width = '586px'>
-</div>
 
 ### Prerequisites
 - Python 3.8
