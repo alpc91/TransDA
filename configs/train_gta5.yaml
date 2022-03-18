@@ -1,0 +1,19 @@
+DATASETS:
+  SOURCE_TRAIN: "gta5_train"
+  TARGET_TRAIN: "cityscapes_self_distill_train"
+  TEST: "cityscapes_val"
+  # "cityscapes_test"
+INPUT:
+  INPUT_SIZE_TEST: (2048, 1024)
+  INPUT_SCALES_TRAIN: (0.5, 2.0)
+  HORIZONTAL_FLIP_PROB_TRAIN: 0.5
+  BRIGHTNESS: 0.5
+  CONTRAST: 0.5
+  SATURATION: 0.5
+  HUE: 0.2
+SOLVER:
+  BASE_LR: 0.00006
+  BASE_LR_D: 0.0001
+  MAX_ITER: 31250
+  STOP_ITER: 10000
+  BATCH_SIZE: 8
