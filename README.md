@@ -48,7 +48,7 @@ If you find this code useful for your research, please cite our paper:
 - cityscapesscripts
 
 
-### Getting started
+### Datasets
 
 - Download [The GTA5 Dataset]( https://download.visinf.tu-darmstadt.de/data/from_games/ )
 
@@ -56,12 +56,12 @@ If you find this code useful for your research, please cite our paper:
 
 - Download [The Cityscapes Dataset]( https://www.cityscapes-dataset.com/ )
 
-- Symlink the required dataset
+<!-- - Symlink the required dataset
 ```bash
 ln -s /path_to_gta5_dataset datasets/gta5
 ln -s /path_to_synthia_dataset datasets/synthia
 ln -s /path_to_cityscapes_dataset datasets/cityscapes
-```
+``` -->
 
 - Generate the label statics file for GTA5 and SYNTHIA Datasets by running 
 ```
