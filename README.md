@@ -136,5 +136,4 @@ python test.py -cfg configs/train$dataset.yaml data_dir $base_dir/datasets OUTPU
 ![UMAP](figure/UMAP.png)
 
 ### Acknowledgments
-Some codes are adapted from [FADA](https://github.com/JDAI-CV/FADA) and [Swin Transformer for Semantic Segmentaion](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation). We thank them for their excellent projects.
-
+This project is based on [FADA](https://github.com/JDAI-CV/FADA) and [Swin Transformer for Semantic Segmentaion](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation). We thank them for their excellent open-source projects.
