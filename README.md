@@ -107,27 +107,27 @@ bash cls_base.sh
 * Swin ViT weight can be downloaded from [Swin Transformer for ImageNet Classification]( https://github.com/microsoft/Swin-Transformer ) and export weight = YOUR_WEIGHT_PATH.
 * TransDA-S checkpoint can be downloaded from [GTA5toCityscapes](https://drive.google.com/drive/folders/1kU1AAZpiOIVUiM0z8xc3s0yCYKsLty8I?usp=sharing ) and [SYNTHIAtoCityscapes]( https://drive.google.com/drive/folders/142ioi5tTEATp2bVbapTB1k6Z0asTwPFV?usp=sharing ).
 ```
-> export base_dir=.
-> export dataset=_gta5
-> # export dataset=_synthia
-> export weight=https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_small_patch4_window7_224.pth
-> # validate
-> python test.py -cfg configs/train$dataset.yaml --saveres data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/val resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth MODEL.WEIGHTS $weight SOLVER.DIS binary
-> # test for submit
-> python test.py -cfg configs/train$dataset.yaml data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/test resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth  DATASETS.TEST cityscapes_test  MODEL.WEIGHTS $weight SOLVER.DIS binary
+export base_dir=.
+export dataset=_gta5
+# export dataset=_synthia
+export weight=https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_small_patch4_window7_224.pth
+# validate
+python test.py -cfg configs/train$dataset.yaml --saveres data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/val resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth MODEL.WEIGHTS $weight SOLVER.DIS binary
+# test for submit
+python test.py -cfg configs/train$dataset.yaml data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/test resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth  DATASETS.TEST cityscapes_test  MODEL.WEIGHTS $weight SOLVER.DIS binary
 ```
 
 
 * TransDA-B checkpoint can be downloaded from [GTA5toCityscapes]( https://drive.google.com/drive/folders/16zLe32ZRU524VCpGGL4-NcGez2fMeS1R?usp=sharing ) and [SYNTHIAtoCityscapes]( https://drive.google.com/drive/folders/1tjqr69Etz-1M8L5Xvdpubbg127Yu32u5?usp=sharing ).
 ```
-> export base_dir=.
-> export dataset=_gta5
-> # export dataset=_synthia
-> export weight=https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth
-> # validate
-> python test.py -cfg configs/train$dataset.yaml --saveres data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/val resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth MODEL.WEIGHTS $weight SOLVER.DIS class
-> # test for submit
-> python test.py -cfg configs/train$dataset.yaml data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/test resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth  DATASETS.TEST cityscapes_test  MODEL.WEIGHTS $weight SOLVER.DIS class
+export base_dir=.
+export dataset=_gta5
+# export dataset=_synthia
+export weight=https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22k.pth
+# validate
+python test.py -cfg configs/train$dataset.yaml --saveres data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/val resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth MODEL.WEIGHTS $weight SOLVER.DIS class
+# test for submit
+python test.py -cfg configs/train$dataset.yaml data_dir $base_dir/datasets OUTPUT_DIR $base_dir/datasets/cityscapes/test resume $base_dir/pth/CHECKPOINT_FOLDER_NAME/model_last.pth  DATASETS.TEST cityscapes_test  MODEL.WEIGHTS $weight SOLVER.DIS class
 ```
 
 ### Visualization results
